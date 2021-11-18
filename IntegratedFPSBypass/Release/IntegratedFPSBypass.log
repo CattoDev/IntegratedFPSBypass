@@ -1,0 +1,13 @@
+﻿  PauseLayer.cpp
+E:\Geometry_Dash_Mods\IntegratedFPSBypass\IntegratedFPSBypass\Hooks\PauseLayer.cpp(59,20): warning C4305: 'argument': truncation from 'double' to 'float'
+E:\Geometry_Dash_Mods\IntegratedFPSBypass\IntegratedFPSBypass\Hooks\PauseLayer.cpp(77,10): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+E:\Geometry_Dash_Mods\IntegratedFPSBypass\IntegratedFPSBypass\Hooks\PauseLayer.cpp(82,40): warning C4305: 'argument': truncation from 'double' to 'float'
+E:\Geometry_Dash_Mods\IntegratedFPSBypass\IntegratedFPSBypass\Hooks\PauseLayer.cpp(83,47): warning C4305: 'argument': truncation from 'double' to 'float'
+  ToggleVerticalSync.cpp
+  dllmain.cpp
+  Generating code
+  1 of 128 functions ( 0.8%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    1 functions had inline decision re-evaluated but remain unchanged
+  Finished generating code
+  IntegratedFPSBypass.vcxproj -> E:\Geometry_Dash_Mods\IntegratedFPSBypass\Release\IntegratedFPSBypass.dll
