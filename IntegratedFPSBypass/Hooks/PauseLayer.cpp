@@ -23,20 +23,25 @@ void PauseLayer::submitBtnCallback(CCObject*) {
 	}
 	else {
 		// restricting yall from going badonkers with fps values
-		if (value < 361 && value > 0.9) {
+		// well, not restricting anymore but just giving a warning
+		if (value >= 1) {
 			// check if V-Sync is enabled
 			auto gm = gd::GameManager::sharedState();
 
 			// 0030 is V-Sync
 			if (!gm->getGameVariable("0030")) {
 				CCDirector::sharedDirector()->setAnimationInterval(1 / value);
+				if (value > 1000)
+				{
+					gd::FLAlertLayer::create(nullptr, "WARNING", "OK", nullptr, "<cy>Not recommended to use a value higher than 1000, as it can cause system instability and visual glitches.</c>")->show();
+				}
 			}
 			else {
 				gd::FLAlertLayer::create(nullptr, "ERROR", "OK", nullptr, "<cy>V-Sync is enabled. Please disable V-Sync to use FPS Bypass.</c>")->show();
 			}
 		}
 		else {
-			gd::FLAlertLayer::create(nullptr, "ERROR", "OK", nullptr, "<cy>Cannot use a value higher than 360 or lower than 1.</c>")->show();
+			gd::FLAlertLayer::create(nullptr, "ERROR", "OK", nullptr, "<cy>Cannot use a value lower than 1.</c>")->show();
 		}
 	}
 }
